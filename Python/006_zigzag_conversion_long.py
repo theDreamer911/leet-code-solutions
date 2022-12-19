@@ -14,17 +14,17 @@ class Solution:
             if (row == 1) or ((row < numRows) and up):
                 row += 1
                 up = True
-                print(up, row, letter)
+                # print(up, row, letter)
             else:
                 row -= 1
                 up = False
-                print(up, row, letter)
+                # print(up, row, letter)
 
         converted = ""
 
         # print(s) # PAYPALISHIRING
         # print(s)  # G
-        # print(row_map) # {1: 'PAHN', 2: 'APLSIIG', 3: 'YIR'}
+        print(row_map)  # {1: 'PAHN', 2: 'APLSIIG', 3: 'YIR'}
 
         for row in range(1, numRows+1):
             converted += row_map[row]
